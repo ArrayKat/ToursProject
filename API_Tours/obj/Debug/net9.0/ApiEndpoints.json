@@ -1,0 +1,172 @@
+[
+  {
+    "ContainingType": "API_Tours.EndPoints.CountryEndPoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapCountryEndPoints\u003Eb__0_0",
+    "RelativePath": "country/get_countries",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Country"
+    ]
+  },
+  {
+    "ContainingType": "API_Tours.EndPoints.HotelEndPoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapHotelEndPoints\u003Eb__0_1",
+    "RelativePath": "hotel/add_hotel",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hotel",
+        "Type": "API_Tours.Models.Hotel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Hotel"
+    ]
+  },
+  {
+    "ContainingType": "API_Tours.EndPoints.HotelEndPoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapHotelEndPoints\u003Eb__0_3",
+    "RelativePath": "hotel/delete_hotel/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Hotel"
+    ]
+  },
+  {
+    "ContainingType": "API_Tours.EndPoints.HotelEndPoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapHotelEndPoints\u003Eb__0_0",
+    "RelativePath": "hotel/get_hotels",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Hotel"
+    ]
+  },
+  {
+    "ContainingType": "API_Tours.EndPoints.HotelEndPoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapHotelEndPoints\u003Eb__0_2",
+    "RelativePath": "hotel/update_hotel",
+    "HttpMethod": "PUT",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "hotel",
+        "Type": "API_Tours.Models.Hotel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Hotel"
+    ]
+  },
+  {
+    "ContainingType": "API_Tours.EndPoints.TourTypesEndPoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapTourTypesEndPoints\u003Eb__0_0",
+    "RelativePath": "tour_types/get_tour_types",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "TourTypes"
+    ]
+  },
+  {
+    "ContainingType": "API_Tours.EndPoints.TourEndPoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapTourEndPoints\u003Eb__0_0",
+    "RelativePath": "tour/get_tours",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Tour"
+    ]
+  },
+  {
+    "ContainingType": "API_Tours.EndPoints.TypeEndPoints\u002B\u003C\u003Ec",
+    "Method": "\u003CMapTypesEndPoints\u003Eb__0_0",
+    "RelativePath": "types/get_types",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Types"
+    ]
+  }
+]

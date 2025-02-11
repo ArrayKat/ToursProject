@@ -1,0 +1,87 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Client_Tours.ShowTours"
+			 xmlns:vm ="using:Client_Tours.ViewModels"
+			 x:DataType="vm:ShowToursVM"
+			 xmlns:image ="using:Client_Tours.Converters">
+	
+	<UserControl.Resources>
+		<image:ImageConvertor x:Key="ImageConverter"></image:ImageConvertor>
+	</UserControl.Resources>
+	
+	<Grid Background="#bae3e8">
+		<Grid.RowDefinitions >
+			<RowDefinition Height="1.5*"/>
+			<RowDefinition Height="7*"/>
+		</Grid.RowDefinitions>
+		<StackPanel Grid.Row="0" Orientation="Vertical" HorizontalAlignment="Center" >
+			<StackPanel Orientation="Horizontal">
+				<TextBlock Text="Введите текст для поиска:" Margin="10 9"/>
+				<TextBox Text="{Binding SearchTour}" Width="200" Margin="5"/>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal" Margin="80 0">
+				<TextBlock Text="Выберите типы:" Margin="10 7"/>
+				<ComboBox Width="200" ItemsSource="{Binding TypeList}" SelectedItem="{Binding SelectType}">
+					<ComboBox.ItemTemplate>
+						<DataTemplate>
+							<TextBlock Text="{Binding Type1}"/>
+						</DataTemplate>
+					</ComboBox.ItemTemplate>
+				</ComboBox>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal" Margin="210 0">
+				<CheckBox IsChecked="{Binding CheckIsActual}"/>
+				<TextBlock Text="Введите текст для поиска" Margin="0 7"/>
+			</StackPanel>
+		</StackPanel>
+
+		<ListBox Grid.Row="1" ItemsSource="{Binding TourList}" SelectionMode="Single">
+			<ListBox.ItemsPanel>
+				<ItemsPanelTemplate>
+					<WrapPanel></WrapPanel>
+				</ItemsPanelTemplate>
+			</ListBox.ItemsPanel>
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<Border BorderBrush="#445c93" BorderThickness="2">
+						<StackPanel Width="300" MaxHeight="500" Margin="5">
+							<StackPanel HorizontalAlignment="Center">
+								<TextBlock Margin="0 10 0 5" Text="{Binding Name}" FontSize="18" FontWeight="Bold" TextWrapping="Wrap" Foreground="#e31e24"/>
+								<Image Height="150" Width="150" Source="{Binding ImagePreview, Converter={StaticResource ImageConverter}}"/>
+								<TextBlock FontWeight="Bold" Text="{Binding Price}" HorizontalAlignment="Center" FontSize="25"/>
+								
+							</StackPanel>
+
+							<!-- Используем Grid для расположения текста по сторонам -->
+							<Grid Margin="5">
+								<Grid.ColumnDefinitions>
+									<ColumnDefinition Width="Auto"/>
+									<ColumnDefinition Width="*"/>
+									<ColumnDefinition Width="Auto"/>
+								</Grid.ColumnDefinitions>
+
+								<TextBlock Grid.Column="0" Text="{Binding IsActualStr}" Foreground="{Binding ColorIsActual}" HorizontalAlignment="Left"/>
+
+								<TextBlock Grid.Column="2" HorizontalAlignment="Right">
+									<TextBlock.Text>
+										<MultiBinding StringFormat="{}Билетов: {0}">
+											<Binding Path="TicketCount"/>
+										</MultiBinding>
+									</TextBlock.Text>
+								</TextBlock>
+							</Grid>
+						</StackPanel>
+					</Border>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
+
+		
+	</Grid>
+
+
+
+</UserControl>

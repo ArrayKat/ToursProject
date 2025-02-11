@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Новый профиль",
+    "Projects": [
+      {
+        "Path": "API_Tours.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "..\\Client_Tours\\Client_Tours.csproj",
+        "Action": "Start",
+        "DebugTarget": "Client_Tours"
+      }
+    ]
+  }
+]
