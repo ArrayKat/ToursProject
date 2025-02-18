@@ -3,13 +3,17 @@
   "WorkspaceRootPath": "C:\\Users\\Katya\\source\\repos\\API\\ToursProject\\API_Tours\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7BCACECC-B85D-4D0B-884E-8DEEC5482EB2}|..\\Client_Tours\\Client_Tours.csproj|c:\\users\\katya\\source\\repos\\api\\toursproject\\client_tours\\viewmodels\\showtoursvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BCACECC-B85D-4D0B-884E-8DEEC5482EB2}|..\\Client_Tours\\Client_Tours.csproj|c:\\users\\katya\\source\\repos\\api\\toursproject\\client_tours\\viewmodels\\showhotelsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BCACECC-B85D-4D0B-884E-8DEEC5482EB2}|..\\Client_Tours\\Client_Tours.csproj|c:\\users\\katya\\source\\repos\\api\\toursproject\\client_tours\\views\\showtours.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+      "AbsoluteMoniker": "D:0:0:{7BCACECC-B85D-4D0B-884E-8DEEC5482EB2}|..\\Client_Tours\\Client_Tours.csproj|c:\\users\\katya\\source\\repos\\api\\toursproject\\client_tours\\models\\apiconection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7BCACECC-B85D-4D0B-884E-8DEEC5482EB2}|..\\Client_Tours\\Client_Tours.csproj|c:\\users\\katya\\source\\repos\\api\\toursproject\\client_tours\\models\\tour.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BCACECC-B85D-4D0B-884E-8DEEC5482EB2}|..\\Client_Tours\\Client_Tours.csproj|c:\\users\\katya\\source\\repos\\api\\toursproject\\client_tours\\views\\showhotels.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12EF48F0-E573-4FED-B269-98D6F6F99EBC}|API_Tours.csproj|c:\\users\\katya\\source\\repos\\api\\toursproject\\api_tours\\endpoints\\hotelendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12EF48F0-E573-4FED-B269-98D6F6F99EBC}|API_Tours.csproj|solutionrelative:endpoints\\hotelendpoints.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,7 +23,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 217,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,42 +46,56 @@
               "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Tour.cs",
-              "DocumentMoniker": "C:\\Users\\Katya\\source\\repos\\API\\ToursProject\\Client_Tours\\Models\\Tour.cs",
-              "RelativeDocumentMoniker": "..\\Client_Tours\\Models\\Tour.cs",
-              "ToolTip": "C:\\Users\\Katya\\source\\repos\\API\\ToursProject\\Client_Tours\\Models\\Tour.cs",
-              "RelativeToolTip": "..\\Client_Tours\\Models\\Tour.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA0AAAAAAAAAA==",
+              "Title": "ShowHotels.axaml",
+              "DocumentMoniker": "C:\\Users\\Katya\\source\\repos\\API\\ToursProject\\Client_Tours\\Views\\ShowHotels.axaml",
+              "RelativeDocumentMoniker": "..\\Client_Tours\\Views\\ShowHotels.axaml",
+              "ToolTip": "C:\\Users\\Katya\\source\\repos\\API\\ToursProject\\Client_Tours\\Views\\ShowHotels.axaml",
+              "RelativeToolTip": "..\\Client_Tours\\Views\\ShowHotels.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-02-18T00:44:10.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HotelEndPoints.cs",
+              "DocumentMoniker": "C:\\Users\\Katya\\source\\repos\\API\\ToursProject\\API_Tours\\EndPoints\\HotelEndPoints.cs",
+              "RelativeDocumentMoniker": "EndPoints\\HotelEndPoints.cs",
+              "ToolTip": "C:\\Users\\Katya\\source\\repos\\API\\ToursProject\\API_Tours\\EndPoints\\HotelEndPoints.cs",
+              "RelativeToolTip": "EndPoints\\HotelEndPoints.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T00:59:59.472Z",
+              "WhenOpened": "2025-02-18T00:38:31.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShowHotelsVM.cs",
+              "DocumentMoniker": "C:\\Users\\Katya\\source\\repos\\API\\ToursProject\\Client_Tours\\ViewModels\\ShowHotelsVM.cs",
+              "RelativeDocumentMoniker": "..\\Client_Tours\\ViewModels\\ShowHotelsVM.cs",
+              "ToolTip": "C:\\Users\\Katya\\source\\repos\\API\\ToursProject\\Client_Tours\\ViewModels\\ShowHotelsVM.cs",
+              "RelativeToolTip": "..\\Client_Tours\\ViewModels\\ShowHotelsVM.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAcwCkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T00:31:57.047Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ShowTours.axaml",
-              "DocumentMoniker": "C:\\Users\\Katya\\source\\repos\\API\\ToursProject\\Client_Tours\\Views\\ShowTours.axaml",
-              "RelativeDocumentMoniker": "..\\Client_Tours\\Views\\ShowTours.axaml",
-              "ToolTip": "C:\\Users\\Katya\\source\\repos\\API\\ToursProject\\Client_Tours\\Views\\ShowTours.axaml",
-              "RelativeToolTip": "..\\Client_Tours\\Views\\ShowTours.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-11T00:23:56.805Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ShowToursVM.cs",
-              "DocumentMoniker": "C:\\Users\\Katya\\source\\repos\\API\\ToursProject\\Client_Tours\\ViewModels\\ShowToursVM.cs",
-              "RelativeDocumentMoniker": "..\\Client_Tours\\ViewModels\\ShowToursVM.cs",
-              "ToolTip": "C:\\Users\\Katya\\source\\repos\\API\\ToursProject\\Client_Tours\\ViewModels\\ShowToursVM.cs",
-              "RelativeToolTip": "..\\Client_Tours\\ViewModels\\ShowToursVM.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwBYAAAAJAAAAAAAAAA==",
+              "Title": "ApiConection.cs",
+              "DocumentMoniker": "C:\\Users\\Katya\\source\\repos\\API\\ToursProject\\Client_Tours\\Models\\ApiConection.cs",
+              "RelativeDocumentMoniker": "..\\Client_Tours\\Models\\ApiConection.cs",
+              "ToolTip": "C:\\Users\\Katya\\source\\repos\\API\\ToursProject\\Client_Tours\\Models\\ApiConection.cs",
+              "RelativeToolTip": "..\\Client_Tours\\Models\\ApiConection.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAuwCUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T23:06:22.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T21:18:55.19Z"
             }
           ]
         }

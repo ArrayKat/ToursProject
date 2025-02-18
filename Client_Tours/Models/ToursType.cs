@@ -13,5 +13,5 @@ public partial class ToursType
 
     public virtual Tour Tour { get; set; } = null!;
 
-    public virtual Type Type { get; set; } = null!;
+    public virtual TypeLocal Type { get; set; } = null!;
 }

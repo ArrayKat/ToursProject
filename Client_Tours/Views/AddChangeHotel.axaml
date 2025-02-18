@@ -1,0 +1,36 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Client_Tours.AddChangeHotel"
+			 xmlns:vm ="using:Client_Tours.ViewModels"
+			 x:DataType="vm:AddChangeHotelVM">
+
+
+	<Grid ColumnDefinitions="0.2*, *, 0.2*">
+		<Button Content="Назад" Command="{Binding GoBack}" VerticalAlignment="Top"/>
+		<StackPanel Margin="0 30" Grid.Column="1">
+			<TextBox Watermark="Наименование отеля" Text="{Binding NewHotel.Name}" HorizontalAlignment="Stretch"/>
+			<Panel Height="15"/>
+			<TextBlock Text="Количество звёзд" HorizontalAlignment="Stretch"/>
+			<Panel Height="5"/>
+			<ComboBox ItemsSource="{Binding Stars}" HorizontalAlignment="Stretch" SelectedIndex="{Binding SelectedStas}"/>
+			<Panel Height="15"/>
+			<TextBox Watermark="Описание отеля" Text="{Binding NewHotel.Description}" HorizontalAlignment="Stretch" TextWrapping="Wrap" />
+			<Panel Height="15"/>
+			<TextBlock Text="Страна" HorizontalAlignment="Stretch"/>
+			<Panel Height="5"/>
+			<ComboBox ItemsSource="{Binding Countries}" HorizontalAlignment="Stretch" SelectedItem="{Binding SelectedCountry}">
+				<ComboBox.ItemTemplate>
+					<DataTemplate>
+						<TextBlock Text="{Binding Country1}"/>
+					</DataTemplate>
+				</ComboBox.ItemTemplate>
+			</ComboBox>
+			<Panel Height="15"/>
+			<Button Content="Сохранить" Command="{Binding SaveChange}"></Button>
+		</StackPanel>
+	</Grid>
+	
+</UserControl>

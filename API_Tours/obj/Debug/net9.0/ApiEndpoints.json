@@ -28,7 +28,7 @@
     "Parameters": [
       {
         "Name": "hotel",
-        "Type": "API_Tours.Models.Hotel",
+        "Type": "API_Tours.Models.HotelDto",
         "IsRequired": true
       }
     ],

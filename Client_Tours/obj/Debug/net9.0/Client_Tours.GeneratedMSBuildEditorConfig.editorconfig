@@ -24,6 +24,9 @@ build_property.EnableCodeStyleSeverity =
 [C:/Users/Katya/source/repos/API/ToursProject/Client_Tours/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/Katya/source/repos/API/ToursProject/Client_Tours/Views/AddChangeHotel.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/Katya/source/repos/API/ToursProject/Client_Tours/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 

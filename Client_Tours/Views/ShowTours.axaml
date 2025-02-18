@@ -17,26 +17,45 @@
 			<RowDefinition Height="1.5*"/>
 			<RowDefinition Height="7*"/>
 		</Grid.RowDefinitions>
-		<StackPanel Grid.Row="0" Orientation="Vertical" HorizontalAlignment="Center" >
-			<StackPanel Orientation="Horizontal">
-				<TextBlock Text="Введите текст для поиска:" Margin="10 9"/>
-				<TextBox Text="{Binding SearchTour}" Width="200" Margin="5"/>
+		<StackPanel Orientation="Horizontal">
+			<StackPanel Grid.Row="0" Orientation="Vertical" HorizontalAlignment="Center" >
+				<StackPanel Orientation="Horizontal">
+					<TextBlock Text="Введите текст для поиска:" Margin="10 9"/>
+					<TextBox Text="{Binding SearchTour}" Width="200" Margin="5"/>
+				</StackPanel>
+				<StackPanel Orientation="Horizontal" Margin="80 0">
+					<TextBlock Text="Выберите типы:" Margin="10 7"/>
+					<ComboBox Width="200" ItemsSource="{Binding TypeList}" SelectedItem="{Binding SelectType}">
+						<ComboBox.ItemTemplate>
+							<DataTemplate>
+								<TextBlock Text="{Binding Type1}"/>
+							</DataTemplate>
+						</ComboBox.ItemTemplate>
+					</ComboBox>
+				</StackPanel>
+				<StackPanel Orientation="Horizontal" Margin="210 0">
+					<CheckBox IsChecked="{Binding CheckIsActual}"/>
+					<TextBlock Text="Только актуальные туры" Margin="0 7"/>
+				</StackPanel>
 			</StackPanel>
-			<StackPanel Orientation="Horizontal" Margin="80 0">
-				<TextBlock Text="Выберите типы:" Margin="10 7"/>
-				<ComboBox Width="200" ItemsSource="{Binding TypeList}" SelectedItem="{Binding SelectType}">
-					<ComboBox.ItemTemplate>
-						<DataTemplate>
-							<TextBlock Text="{Binding Type1}"/>
-						</DataTemplate>
-					</ComboBox.ItemTemplate>
-				</ComboBox>
-			</StackPanel>
-			<StackPanel Orientation="Horizontal" Margin="210 0">
-				<CheckBox IsChecked="{Binding CheckIsActual}"/>
-				<TextBlock Text="Введите текст для поиска" Margin="0 7"/>
+			<StackPanel Orientation="Vertical">
+				<StackPanel Orientation="Horizontal" Margin="80 0">
+					<TextBlock Text="Сортировка цены:" Margin="10 7"/>
+					<ComboBox Width="200" ItemsSource="{Binding SortValue}" SelectedIndex="{Binding SortValueID}"/>
+				</StackPanel>
+				<TextBlock Text="{Binding AllCostTours, StringFormat='Общая стоимость туров: {0} руб.'}" Margin="10 7"/>
+				<TextBlock Margin="10 7">
+					<TextBlock.Text>
+						<MultiBinding StringFormat="Колличество туров: {0}/{1}">
+							<Binding Path="CurrentCountTours"/>
+							<Binding Path="AllCountTours"/>
+						</MultiBinding>
+					</TextBlock.Text>
+				</TextBlock>
+				<Button Command="{Binding GoToHotels}" Content="Отели" Margin="10 7"/>
 			</StackPanel>
 		</StackPanel>
+		
 
 		<ListBox Grid.Row="1" ItemsSource="{Binding TourList}" SelectionMode="Single">
 			<ListBox.ItemsPanel>

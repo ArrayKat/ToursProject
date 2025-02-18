@@ -15,7 +15,4 @@ public partial class ShowTours : UserControl
         InitializeComponent();
         DataContext = new ShowToursVM();
     }
-
-    
-    
 }

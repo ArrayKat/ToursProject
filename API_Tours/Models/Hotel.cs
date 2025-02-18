@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 
 namespace API_Tours.Models;
@@ -15,5 +16,6 @@ public partial class Hotel
 
     public string? Description { get; set; }
 
+    [JsonIgnore]
     public virtual Country CountryCodeNavigation { get; set; } = null!;
 }

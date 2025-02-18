@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Client_Tours.Models;
 
-public partial class Type
+public partial class TypeLocal
 {
     public int Id { get; set; }
 

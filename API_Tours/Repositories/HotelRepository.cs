@@ -9,12 +9,19 @@ namespace API_Tours.Repositories
         public HotelRepository(ToursContext testContext) : base(testContext) { }
 
         //get all
-        public async Task<List<Hotel>> GetHotels() => await testContext.Hotels.ToListAsync();
+        public async Task<List<Hotel>> GetHotels() => await testContext.Hotels.Include(x =>x.CountryCodeNavigation).ToListAsync();
 
         //add - post
-        public async Task AddHotel(Hotel hotel)
+        public async Task AddHotel(HotelDto hotel)
         {
-            testContext.Hotels.Add(hotel);
+            Hotel newHotel = new Hotel
+            {
+                Name = hotel.Name,
+                CountOfStars = hotel.CountOfStars,
+                CountryCode = hotel.CountryCode,
+                Description = hotel.Description
+            };
+            testContext.Hotels.Add(newHotel);
             testContext.SaveChanges();
         }
         //update - put
@@ -30,5 +37,7 @@ namespace API_Tours.Repositories
             testContext.Remove(await testContext.Hotels.FirstOrDefaultAsync(x => x.Id == id));
             testContext.SaveChanges();
         }
+
+
     }
 }

@@ -107,3 +107,4 @@ C:\Users\Katya\source\repos\API\ToursProject\API_Tours\bin\Debug\net9.0\zh-Hant\
 C:\Users\Katya\source\repos\API\ToursProject\API_Tours\obj\Debug\net9.0\API_Tours.csproj.AssemblyReference.cache
 C:\Users\Katya\source\repos\API\ToursProject\API_Tours\obj\Debug\net9.0\API_Tours.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Katya\source\repos\API\ToursProject\API_Tours\obj\Debug\net9.0\API_Tours.csproj.Up2Date
+C:\Users\Katya\source\repos\API\ToursProject\API_Tours\obj\Debug\net9.0\API_Tours.sourcelink.json

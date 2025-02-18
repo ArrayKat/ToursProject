@@ -1,8 +1,10 @@
-﻿using Newtonsoft.Json;
+﻿using API_Tours.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Json;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -23,7 +25,20 @@ namespace Client_Tours.Models
             string responce = await message.Content.ReadAsStringAsync();
             return responce;
         }
-
+        public async Task PutHotels(Hotel update)
+        {
+            JsonContent contentUpdate = JsonContent.Create(update);
+            HttpResponseMessage message = await client.PutAsync("/hotel/update_hotel", contentUpdate);
+        }
+        public async Task PostHotels(HotelDto add)
+        {
+            JsonContent contentUpdate = JsonContent.Create(add);
+            HttpResponseMessage message = await client.PostAsync("/hotel/add_hotel", contentUpdate);
+        }
+        public async Task DeleteHotels(int idHotel)
+        {
+            HttpResponseMessage message = await client.DeleteAsync($"/hotel/delete_hotel/{idHotel}");
+        }
 
 
         public async Task<string> GetTours() {
@@ -49,5 +64,7 @@ namespace Client_Tours.Models
             string responce = await message.Content.ReadAsStringAsync();
             return responce;
         }
+
+        
     }
 }

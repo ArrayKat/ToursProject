@@ -20,7 +20,7 @@ namespace API_Tours.Servises
         new JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
 
         //add - post
-        public async Task AddHotel(Hotel hotel) => await repository.AddHotel(hotel);
+        public async Task AddHotel(HotelDto hotel) => await repository.AddHotel(hotel);
 
 
         //update - put
