@@ -8,10 +8,9 @@
 
 ## Демо
 Swagger API:
-![alt text](Documents\imageAPI.png)
+![alt text](/Documents/imageAPI.png)
 
 Главная страница:
-![alt text](Documents\image.png)
 ![alt text](/Documents/image.png)
 
 Фильтрации:
