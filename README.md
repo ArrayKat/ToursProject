@@ -12,27 +12,28 @@ Swagger API:
 
 Главная страница:
 ![alt text](Documents\image.png)
+![alt text](/Documents/image.png)
 
 Фильтрации:
-![alt text](Documents\image1.png)
+![alt text](/Documents/image1.png)
 
 Сортировка:
-![alt text](Documents\image2.png)
+![alt text](/Documents/image2.png)
 
 Актуальность туров, поиск по названию/описанию:
-![alt text](Documents\image3.png)
+![alt text](/Documents/image3.png)
 
 Вкладка отелей:
-![alt text](Documents\image4.png)
+![alt text](/Documents/image4.png)
 
 Добавление отеля:
-![alt text](Documents\image5.png)
+![alt text](/Documents/image5.png)
 
 Редактирование отеля:
-![alt text](Documents\image6.png)
+![alt text](/Documents/image6.png)
 
 Удаление отелей:
-![alt text](Documents\image7.png)
+![alt text](/Documents/image7.png)
 
 ## Технологии в проекте
 Основной стек технологий:
@@ -52,7 +53,7 @@ Swagger API:
 
 ### Если у вас не отобразился список туров:
 1. Проверьте что API_Tours запущено и корректно работает. Рядом с открывающимся адресом допишите "/swagger" и убедитесь что страница доступна:
-![alt text](Documents\imageAPI.png)
+![alt text](/Documents/imageAPI.png)
 1. Если это не сработало проверьте целостность базы данных, которую подключаете к проекту.
  Установка
 
